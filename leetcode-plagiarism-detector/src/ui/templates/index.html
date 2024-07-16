@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Plagiarism Detector</title>
+</head>
+<body>
+    <h1>LeetCode Plagiarism Detector</h1>
+    <form action="{{ url_for('generate_report') }}" method="post">
+        <label for="contest_id">Select Contest:</label>
+        <select name="contest_id" id="contest_id" required>
+            {% for contest in contests %}
+            <option value="{{ contest.id }}">{{ contest.name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="similarity_threshold">Similarity Threshold:</label>
+        <input type="number" name="similarity_threshold" id="similarity_threshold" min="0" max="1" step="0.1" value="0.8" required>
+        <br><br>
+        <label for="flag_threshold">Flag Threshold:</label>
+        <input type="number" name="flag_threshold" id="flag_threshold" min="1" step="1" value="2" required>
+        <br><br>
+        <input type="submit" value="Generate Report">
+    </form>
+</body>
+</html>
