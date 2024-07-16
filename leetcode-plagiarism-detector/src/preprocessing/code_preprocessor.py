@@ -91,14 +91,15 @@ if __name__ == "__main__":
     preprocessor = CodePreprocessor()
     
     # Test Python preprocessing
-    python_code = 
+    python_code = """
     # This is a comment
     def solution(nums):
-        """This is a docstring"""
+        \"\"\"This is a docstring\"\"\"
         result = 0
         for num in nums:
             result += num  # Compute sum
         return result
+    """
     
     
     preprocessed_code = preprocessor.preprocess(python_code, 'python')
