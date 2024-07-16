@@ -83,6 +83,12 @@ leetcode-plagiarism-detector/
 │   ├── similarity_detection/
 │   ├── flagging/
 │   └── ui/
+├── tests
+│   ├── test_data_collection/
+│   ├── test_preprocessing/
+│   ├── test_imilarity_detection/
+│   ├── test_flagging/
+│   └── readme.md/
 ├── requirements.txt
 └── README.md
 ```
