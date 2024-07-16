@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # 🕵️‍♂️ LeetCode Plagiarism Detector
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
@@ -113,4 +113,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **Disclaimer:** This project is not officially affiliated with LeetCode. It is an independent tool created to promote fair competition and integrity in coding contests.
 
-```
+
